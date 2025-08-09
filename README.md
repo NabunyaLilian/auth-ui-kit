@@ -1,4 +1,4 @@
-# FlutterAuthUI
+# Flutter Auth UIKit
 
 FlutterAuthUI is a clean and modern Flutter app showcasing beautifully designed authentication screens inspired by Dribbble’s top UI/UX trends. It features sleek login, registration, and password recovery screens and intuitive user flow.
 
@@ -26,8 +26,7 @@ FlutterAuthUI is a clean and modern Flutter app showcasing beautifully designed 
 ### Run Locally
 
 ```bash
-git clone https://github.com/yourusername/flutter_auth_ui.git
-cd flutter_auth_ui
+git clone https://github.com/NabunyaLilian/auth-ui-kit.git
 flutter pub get
 flutter run
 ```
@@ -36,7 +35,7 @@ flutter run
 
 ## Inspiration
 
-The UI designs for these auth screens are inspired by beautiful Dribbble shots focusing on simplicity and user-friendly experience in authentication flows. See more at [Dribbble](https://dribbble.com/shots/18891378-Login-Signup-Design-Flutter-App).
+The UI designs for these auth screens are inspired by this dribble design [Login-Sign-Up-Design](https://dribbble.com/shots/18891378-Login-Signup-Design-Flutter-App).
 
 ---
 
