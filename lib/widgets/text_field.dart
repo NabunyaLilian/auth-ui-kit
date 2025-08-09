@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
-class CustomTextField extends StatefulWidget {
+class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
+    this.textController,
     required this.labelText,
     required this.hintText,
     this.prefixIcon,
-    this.textController,
-    this.obscureText = false,
     this.suffixIcon,
+    this.obscureText = false,
+    this.validator,
+    this.keyboardType,
   });
 
   final TextEditingController? textController;
@@ -17,30 +19,23 @@ class CustomTextField extends StatefulWidget {
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final bool obscureText;
+  final String? Function(String?)? validator;
+  final TextInputType? keyboardType;
 
-  @override
-  State<CustomTextField> createState() => _CustomTextFieldState();
-}
-
-class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      obscureText: widget.obscureText,
-      controller: widget.textController,
+      keyboardType: keyboardType,
+      obscureText: obscureText,
+      controller: textController,
+      validator: validator,
       decoration: InputDecoration(
-        labelText: widget.labelText,
-        hintText: widget.hintText,
-        prefixIcon: widget.prefixIcon,
-        suffixIcon: widget.suffixIcon,
+        labelText: labelText,
+        hintText: hintText,
+        prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    widget.textController?.dispose();
-    super.dispose();
   }
 }

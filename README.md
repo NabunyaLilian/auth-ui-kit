@@ -6,7 +6,7 @@ FlutterAuthUI is a clean and modern Flutter app showcasing beautifully designed 
 
 ## Features
 
-* **Dribbble-Inspired Design:** Minimalist and elegant UI with balanced spacing, vibrant accent colors, and smooth transitions.
+* **Dribbble-Inspired Design:** Minimalist and elegant UI with balanced spacing and vibrant accent colors.
 * **Login Screen:** Simple form with email/password fields,and social login buttons.
 * **Registration Screen:** Clean signup form with validation-ready fields and clear call-to-action buttons.
 * **Password Recovery:** Easy-to-use "Forgot Password" screen with email input.
